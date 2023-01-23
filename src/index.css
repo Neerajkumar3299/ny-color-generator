@@ -1,0 +1,95 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Verdana, sans-serif;
+}
+.header{
+  display: flex;
+  align-items: center;
+  padding: 10px 100px;
+}
+.header>h2{
+  color: orange;
+  letter-spacing: 1.5px;
+  text-shadow: 2px 2px 2px grey;
+  padding: 10px;
+  
+}
+.form{
+  margin-left: 10px;
+}
+input,.btn{
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  outline: none;
+}
+.btn{
+  margin-left: 5px;
+  color: white;
+  text-transform: uppercase;
+  background-color: aquamarine;
+  font-weight: 600;
+  border: 1px solid white;
+  transition: 0.5s linear;
+}
+.btn:hover{
+  cursor: pointer;
+  background-color: rgb(93, 186, 155);
+}
+
+.section-center{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+.color-container{
+  width: 20%;
+  height: 150px;
+  padding: 10px;
+  position: relative;
+} 
+.copy{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.copy:hover{
+  cursor: pointer;
+}
+p{
+  font-size: 12px;
+}
+.error{
+  border: 2px solid red;
+}
+.setColor{
+  color: white;
+}
+/* ----------------------------- Media Query ------------------------------- */
+@media screen and (max-width:760px){
+  .header{
+    flex-direction:column;
+    text-align: center;
+    width: 100%;
+  }
+  .btn{
+    margin-top: 10px;
+  }
+  .color-container{
+    width: 25%;
+  }
+}
+@media screen and (max-width:340px){
+  .color-container{
+    width: 50%;
+  }
+}
+@media screen and (max-width:240px) {
+  .color-container {
+    width: 100%;
+  }
+}
